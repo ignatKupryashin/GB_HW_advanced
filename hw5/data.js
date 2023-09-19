@@ -12,9 +12,9 @@ const fill = (data) => {data.forEach((element) => {
     item.classList.add('item');
     const heading = document.createElement("h3");
     heading.innerText = `${element.userId} - ${element.id} - ${element.title}`;
-    const paragrah = document.createElement('p');
-    paragrah.innerText = element.body;
-    item.append(heading, paragrah);
+    const paragraph = document.createElement('p');
+    paragraph.innerText = element.body;
+    item.append(heading, paragraph);
     container.appendChild(item);
 })}
 
